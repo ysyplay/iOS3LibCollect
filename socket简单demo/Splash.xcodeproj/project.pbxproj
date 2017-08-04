@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04522D951CE2D171002B896E /* SqliteTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04522D921CE2D171002B896E /* SqliteTool.m */; };
+		04522D961CE2D171002B896E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04522D941CE2D171002B896E /* User.m */; };
+		04522D981CE2D191002B896E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04522D971CE2D191002B896E /* RegisterViewController.m */; };
+		046D1DFC1CAD732800785F12 /* ConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D1DFB1CAD732800785F12 /* ConsoleViewController.m */; };
+		046D1E011CAD742500785F12 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D1DFE1CAD742500785F12 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		046D1E021CAD742500785F12 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 046D1E001CAD742500785F12 /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		046D1E041CAD748D00785F12 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D1E031CAD748D00785F12 /* CFNetwork.framework */; };
+		046D1E061CAD749A00785F12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046D1E051CAD749A00785F12 /* CoreGraphics.framework */; };
+		04C145D91CABF9F70071E6D7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C145D81CABF9F70071E6D7 /* libsqlite3.0.tbd */; };
+		04C645951CADFD44006245CB /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C645941CADFD44006245CB /* SettingViewController.m */; };
+		04D73F911CA307B500E63FBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D73F901CA307B500E63FBA /* main.m */; };
+		04D73F941CA307B500E63FBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D73F931CA307B500E63FBA /* AppDelegate.m */; };
+		04D73F971CA307B500E63FBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D73F961CA307B500E63FBA /* ViewController.m */; };
+		04D73F9A1CA307B500E63FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D73F981CA307B500E63FBA /* Main.storyboard */; };
+		04D73F9C1CA307B500E63FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D73F9B1CA307B500E63FBA /* Assets.xcassets */; };
+		04D73F9F1CA307B500E63FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D73F9D1CA307B500E63FBA /* LaunchScreen.storyboard */; };
+		04D73FAA1CA307B500E63FBA /* SplashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D73FA91CA307B500E63FBA /* SplashTests.m */; };
+		04D73FB51CA307B500E63FBA /* SplashUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D73FB41CA307B500E63FBA /* SplashUITests.m */; };
+		04FD44381CAE449C0011F567 /* SendTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD44371CAE449C0011F567 /* SendTool.m */; };
+		04FD443D1CAE619C0011F567 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD443C1CAE619C0011F567 /* HomeViewController.m */; };
+		04FD44401CAE6A6A0011F567 /* SleepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD443F1CAE6A6A0011F567 /* SleepViewController.m */; };
+		04FD44431CAE6DEF0011F567 /* BathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD44421CAE6DEF0011F567 /* BathViewController.m */; };
+		04FDF78E1CAFF440002BF8C5 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04FDF78D1CAFF440002BF8C5 /* MBProgressHUD.bundle */; };
+		04FDF7901CAFF449002BF8C5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDF78F1CAFF449002BF8C5 /* MBProgressHUD.m */; };
+		04FDF7931CAFF457002BF8C5 /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDF7921CAFF457002BF8C5 /* MBProgressHUD+CZ.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D73FA61CA307B500E63FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D73F841CA307B500E63FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D73F8B1CA307B500E63FBA;
+			remoteInfo = Splash;
+		};
+		04D73FB11CA307B500E63FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D73F841CA307B500E63FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D73F8B1CA307B500E63FBA;
+			remoteInfo = Splash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04522D911CE2D171002B896E /* SqliteTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SqliteTool.h; path = Splash/SqliteTool.h; sourceTree = "<group>"; };
+		04522D921CE2D171002B896E /* SqliteTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SqliteTool.m; path = Splash/SqliteTool.m; sourceTree = "<group>"; };
+		04522D931CE2D171002B896E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Splash/User.h; sourceTree = "<group>"; };
+		04522D941CE2D171002B896E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Splash/User.m; sourceTree = "<group>"; };
+		04522D971CE2D191002B896E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Splash/RegisterViewController.m; sourceTree = "<group>"; };
+		04522D991CE2D198002B896E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Splash/RegisterViewController.h; sourceTree = "<group>"; };
+		046D1DFA1CAD732800785F12 /* ConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleViewController.h; sourceTree = "<group>"; };
+		046D1DFB1CAD732800785F12 /* ConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleViewController.m; sourceTree = "<group>"; };
+		046D1DFD1CAD742500785F12 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		046D1DFE1CAD742500785F12 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		046D1DFF1CAD742500785F12 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		046D1E001CAD742500785F12 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		046D1E031CAD748D00785F12 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		046D1E051CAD749A00785F12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04C145D81CABF9F70071E6D7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		04C645931CADFD44006245CB /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		04C645941CADFD44006245CB /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		04D73F8C1CA307B500E63FBA /* 微创智能家居.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微创智能家居.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D73F901CA307B500E63FBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04D73F921CA307B500E63FBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04D73F931CA307B500E63FBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04D73F951CA307B500E63FBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04D73F961CA307B500E63FBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04D73F991CA307B500E63FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04D73F9B1CA307B500E63FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04D73F9E1CA307B500E63FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04D73FA01CA307B500E63FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D73FA51CA307B500E63FBA /* SplashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D73FA91CA307B500E63FBA /* SplashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashTests.m; sourceTree = "<group>"; };
+		04D73FAB1CA307B500E63FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D73FB01CA307B500E63FBA /* SplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D73FB41CA307B500E63FBA /* SplashUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashUITests.m; sourceTree = "<group>"; };
+		04D73FB61CA307B500E63FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04FD44361CAE449C0011F567 /* SendTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendTool.h; sourceTree = "<group>"; };
+		04FD44371CAE449C0011F567 /* SendTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendTool.m; sourceTree = "<group>"; };
+		04FD443B1CAE619C0011F567 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		04FD443C1CAE619C0011F567 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		04FD443E1CAE6A6A0011F567 /* SleepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepViewController.h; sourceTree = "<group>"; };
+		04FD443F1CAE6A6A0011F567 /* SleepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepViewController.m; sourceTree = "<group>"; };
+		04FD44411CAE6DEF0011F567 /* BathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BathViewController.h; sourceTree = "<group>"; };
+		04FD44421CAE6DEF0011F567 /* BathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BathViewController.m; sourceTree = "<group>"; };
+		04FDF78C1CAFF432002BF8C5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		04FDF78D1CAFF440002BF8C5 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		04FDF78F1CAFF449002BF8C5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		04FDF7911CAFF451002BF8C5 /* MBProgressHUD+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CZ.h"; sourceTree = "<group>"; };
+		04FDF7921CAFF457002BF8C5 /* MBProgressHUD+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CZ.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D73F891CA307B500E63FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046D1E061CAD749A00785F12 /* CoreGraphics.framework in Frameworks */,
+				046D1E041CAD748D00785F12 /* CFNetwork.framework in Frameworks */,
+				04C145D91CABF9F70071E6D7 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D73FA21CA307B500E63FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D73FAD1CA307B500E63FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046D1DED1CAD435B00785F12 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04FD443B1CAE619C0011F567 /* HomeViewController.h */,
+				04FD443C1CAE619C0011F567 /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		046D1DF81CAD598700785F12 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				04FDF7921CAFF457002BF8C5 /* MBProgressHUD+CZ.m */,
+				04FDF7911CAFF451002BF8C5 /* MBProgressHUD+CZ.h */,
+				04FDF78F1CAFF449002BF8C5 /* MBProgressHUD.m */,
+				04FDF78D1CAFF440002BF8C5 /* MBProgressHUD.bundle */,
+				04FDF78C1CAFF432002BF8C5 /* MBProgressHUD.h */,
+				046D1DFD1CAD742500785F12 /* AsyncSocket.h */,
+				046D1DFE1CAD742500785F12 /* AsyncSocket.m */,
+				046D1DFF1CAD742500785F12 /* AsyncUdpSocket.h */,
+				046D1E001CAD742500785F12 /* AsyncUdpSocket.m */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		046D1DF91CAD72EB00785F12 /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				046D1DFA1CAD732800785F12 /* ConsoleViewController.h */,
+				046D1DFB1CAD732800785F12 /* ConsoleViewController.m */,
+				04FD44361CAE449C0011F567 /* SendTool.h */,
+				04FD44371CAE449C0011F567 /* SendTool.m */,
+			);
+			name = Console;
+			sourceTree = "<group>";
+		};
+		047964F11CAC150E004C830A /* others */ = {
+			isa = PBXGroup;
+			children = (
+				04D73F931CA307B500E63FBA /* AppDelegate.m */,
+				04D73F921CA307B500E63FBA /* AppDelegate.h */,
+			);
+			name = others;
+			sourceTree = "<group>";
+		};
+		047964F21CAC1592004C830A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04D73F951CA307B500E63FBA /* ViewController.h */,
+				04D73F961CA307B500E63FBA /* ViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		04C145D41CABF5470071E6D7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				04522D991CE2D198002B896E /* RegisterViewController.h */,
+				04522D971CE2D191002B896E /* RegisterViewController.m */,
+				04522D911CE2D171002B896E /* SqliteTool.h */,
+				04522D921CE2D171002B896E /* SqliteTool.m */,
+				04522D931CE2D171002B896E /* User.h */,
+				04522D941CE2D171002B896E /* User.m */,
+			);
+			name = Register;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		04C645921CADFCFA006245CB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				04C645931CADFD44006245CB /* SettingViewController.h */,
+				04C645941CADFD44006245CB /* SettingViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		04C645961CADFD6C006245CB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				04C145D81CABF9F70071E6D7 /* libsqlite3.0.tbd */,
+				046D1E031CAD748D00785F12 /* CFNetwork.framework */,
+				046D1E051CAD749A00785F12 /* CoreGraphics.framework */,
+			);
+			name = Framework;
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		04D73F831CA307B500E63FBA = {
+			isa = PBXGroup;
+			children = (
+				04C645961CADFD6C006245CB /* Framework */,
+				04D73F8E1CA307B500E63FBA /* Splash */,
+				04D73FA81CA307B500E63FBA /* SplashTests */,
+				04D73FB31CA307B500E63FBA /* SplashUITests */,
+				04D73F8D1CA307B500E63FBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04D73F8D1CA307B500E63FBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D73F8C1CA307B500E63FBA /* 微创智能家居.app */,
+				04D73FA51CA307B500E63FBA /* SplashTests.xctest */,
+				04D73FB01CA307B500E63FBA /* SplashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D73F8E1CA307B500E63FBA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				04FD443A1CAE613A0011F567 /* Bath */,
+				04FD44391CAE612F0011F567 /* Sleep */,
+				046D1DF81CAD598700785F12 /* Lib */,
+				04C645921CADFCFA006245CB /* Setting */,
+				046D1DF91CAD72EB00785F12 /* Console */,
+				046D1DED1CAD435B00785F12 /* Home */,
+				047964F11CAC150E004C830A /* others */,
+				047964F21CAC1592004C830A /* Login */,
+				04C145D41CABF5470071E6D7 /* Register */,
+				04D73F8F1CA307B500E63FBA /* Supporting Files */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		04D73F8F1CA307B500E63FBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04D73F981CA307B500E63FBA /* Main.storyboard */,
+				04D73FA01CA307B500E63FBA /* Info.plist */,
+				04D73F9D1CA307B500E63FBA /* LaunchScreen.storyboard */,
+				04D73F9B1CA307B500E63FBA /* Assets.xcassets */,
+				04D73F901CA307B500E63FBA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04D73FA81CA307B500E63FBA /* SplashTests */ = {
+			isa = PBXGroup;
+			children = (
+				04D73FA91CA307B500E63FBA /* SplashTests.m */,
+				04D73FAB1CA307B500E63FBA /* Info.plist */,
+			);
+			path = SplashTests;
+			sourceTree = "<group>";
+		};
+		04D73FB31CA307B500E63FBA /* SplashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04D73FB41CA307B500E63FBA /* SplashUITests.m */,
+				04D73FB61CA307B500E63FBA /* Info.plist */,
+			);
+			path = SplashUITests;
+			sourceTree = "<group>";
+		};
+		04FD44391CAE612F0011F567 /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				04FD443E1CAE6A6A0011F567 /* SleepViewController.h */,
+				04FD443F1CAE6A6A0011F567 /* SleepViewController.m */,
+			);
+			name = Sleep;
+			sourceTree = "<group>";
+		};
+		04FD443A1CAE613A0011F567 /* Bath */ = {
+			isa = PBXGroup;
+			children = (
+				04FD44411CAE6DEF0011F567 /* BathViewController.h */,
+				04FD44421CAE6DEF0011F567 /* BathViewController.m */,
+			);
+			name = Bath;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04D73F8B1CA307B500E63FBA /* Splash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D73FB91CA307B500E63FBA /* Build configuration list for PBXNativeTarget "Splash" */;
+			buildPhases = (
+				04D73F881CA307B500E63FBA /* Sources */,
+				04D73F891CA307B500E63FBA /* Frameworks */,
+				04D73F8A1CA307B500E63FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Splash;
+			productName = Splash;
+			productReference = 04D73F8C1CA307B500E63FBA /* 微创智能家居.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04D73FA41CA307B500E63FBA /* SplashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D73FBC1CA307B500E63FBA /* Build configuration list for PBXNativeTarget "SplashTests" */;
+			buildPhases = (
+				04D73FA11CA307B500E63FBA /* Sources */,
+				04D73FA21CA307B500E63FBA /* Frameworks */,
+				04D73FA31CA307B500E63FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D73FA71CA307B500E63FBA /* PBXTargetDependency */,
+			);
+			name = SplashTests;
+			productName = SplashTests;
+			productReference = 04D73FA51CA307B500E63FBA /* SplashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04D73FAF1CA307B500E63FBA /* SplashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D73FBF1CA307B500E63FBA /* Build configuration list for PBXNativeTarget "SplashUITests" */;
+			buildPhases = (
+				04D73FAC1CA307B500E63FBA /* Sources */,
+				04D73FAD1CA307B500E63FBA /* Frameworks */,
+				04D73FAE1CA307B500E63FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D73FB21CA307B500E63FBA /* PBXTargetDependency */,
+			);
+			name = SplashUITests;
+			productName = SplashUITests;
+			productReference = 04D73FB01CA307B500E63FBA /* SplashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D73F841CA307B500E63FBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					04D73F8B1CA307B500E63FBA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 47RFMS75C8;
+					};
+					04D73FA41CA307B500E63FBA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 47RFMS75C8;
+						TestTargetID = 04D73F8B1CA307B500E63FBA;
+					};
+					04D73FAF1CA307B500E63FBA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 47RFMS75C8;
+						TestTargetID = 04D73F8B1CA307B500E63FBA;
+					};
+				};
+			};
+			buildConfigurationList = 04D73F871CA307B500E63FBA /* Build configuration list for PBXProject "Splash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D73F831CA307B500E63FBA;
+			productRefGroup = 04D73F8D1CA307B500E63FBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D73F8B1CA307B500E63FBA /* Splash */,
+				04D73FA41CA307B500E63FBA /* SplashTests */,
+				04D73FAF1CA307B500E63FBA /* SplashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04D73F8A1CA307B500E63FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D73F9F1CA307B500E63FBA /* LaunchScreen.storyboard in Resources */,
+				04FDF78E1CAFF440002BF8C5 /* MBProgressHUD.bundle in Resources */,
+				04D73F9C1CA307B500E63FBA /* Assets.xcassets in Resources */,
+				04D73F9A1CA307B500E63FBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D73FA31CA307B500E63FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D73FAE1CA307B500E63FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04D73F881CA307B500E63FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD44431CAE6DEF0011F567 /* BathViewController.m in Sources */,
+				04FD44381CAE449C0011F567 /* SendTool.m in Sources */,
+				046D1E021CAD742500785F12 /* AsyncUdpSocket.m in Sources */,
+				04D73F971CA307B500E63FBA /* ViewController.m in Sources */,
+				046D1E011CAD742500785F12 /* AsyncSocket.m in Sources */,
+				04522D961CE2D171002B896E /* User.m in Sources */,
+				046D1DFC1CAD732800785F12 /* ConsoleViewController.m in Sources */,
+				04522D981CE2D191002B896E /* RegisterViewController.m in Sources */,
+				04D73F941CA307B500E63FBA /* AppDelegate.m in Sources */,
+				04522D951CE2D171002B896E /* SqliteTool.m in Sources */,
+				04D73F911CA307B500E63FBA /* main.m in Sources */,
+				04C645951CADFD44006245CB /* SettingViewController.m in Sources */,
+				04FDF7931CAFF457002BF8C5 /* MBProgressHUD+CZ.m in Sources */,
+				04FD44401CAE6A6A0011F567 /* SleepViewController.m in Sources */,
+				04FD443D1CAE619C0011F567 /* HomeViewController.m in Sources */,
+				04FDF7901CAFF449002BF8C5 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D73FA11CA307B500E63FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D73FAA1CA307B500E63FBA /* SplashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D73FAC1CA307B500E63FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D73FB51CA307B500E63FBA /* SplashUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04D73FA71CA307B500E63FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D73F8B1CA307B500E63FBA /* Splash */;
+			targetProxy = 04D73FA61CA307B500E63FBA /* PBXContainerItemProxy */;
+		};
+		04D73FB21CA307B500E63FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D73F8B1CA307B500E63FBA /* Splash */;
+			targetProxy = 04D73FB11CA307B500E63FBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04D73F981CA307B500E63FBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D73F991CA307B500E63FBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04D73F9D1CA307B500E63FBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D73F9E1CA307B500E63FBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04D73FB71CA307B500E63FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04D73FB81CA307B500E63FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D73FBA1CA307B500E63FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Splash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.Splash";
+				PRODUCT_NAME = "微创智能家居";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		04D73FBB1CA307B500E63FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Splash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.Splash";
+				PRODUCT_NAME = "微创智能家居";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		04D73FBD1CA307B500E63FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SplashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SplashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splash.app/Splash";
+			};
+			name = Debug;
+		};
+		04D73FBE1CA307B500E63FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SplashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SplashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splash.app/Splash";
+			};
+			name = Release;
+		};
+		04D73FC01CA307B500E63FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SplashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SplashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Splash;
+			};
+			name = Debug;
+		};
+		04D73FC11CA307B500E63FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SplashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-0.SplashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Splash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D73F871CA307B500E63FBA /* Build configuration list for PBXProject "Splash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D73FB71CA307B500E63FBA /* Debug */,
+				04D73FB81CA307B500E63FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D73FB91CA307B500E63FBA /* Build configuration list for PBXNativeTarget "Splash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D73FBA1CA307B500E63FBA /* Debug */,
+				04D73FBB1CA307B500E63FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D73FBC1CA307B500E63FBA /* Build configuration list for PBXNativeTarget "SplashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D73FBD1CA307B500E63FBA /* Debug */,
+				04D73FBE1CA307B500E63FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D73FBF1CA307B500E63FBA /* Build configuration list for PBXNativeTarget "SplashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D73FC01CA307B500E63FBA /* Debug */,
+				04D73FC11CA307B500E63FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04D73F841CA307B500E63FBA /* Project object */;
+}

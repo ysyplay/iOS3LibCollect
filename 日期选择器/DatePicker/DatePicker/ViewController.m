@@ -32,7 +32,7 @@
 
 - (void)selectAction:(UIButton *)btn {
 
-    WSDatePickerView *datepicker = [[WSDatePickerView alloc] initWithDateStyle:DateStyleShowYearMonthDayHour CompleteBlock:^(NSDate *startDate) {
+    WSDatePickerView *datepicker = [[WSDatePickerView alloc] initWithDateStyle:DateStyleShowMonthDayHourMinute CompleteBlock:^(NSDate *startDate) {
         NSString *date = [startDate stringWithFormat:@"yyyy-MM-dd HH"];
         NSLog(@"时间： %@",date);
         [btn setTitle:date forState:UIControlStateNormal];
