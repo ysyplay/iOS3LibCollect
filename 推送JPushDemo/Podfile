@@ -1,0 +1,3 @@
+target 'JPushDemo' do
+pod 'JPush'
+end

@@ -1,0 +1,28 @@
+{
+    "main": "public/index.html",
+    "name": "MacGap",
+    "description": "",
+    "version": "2.0.0",
+    "plugins" : {
+                "Dock":"Dock",
+                "Dialog":"Dialog",
+                "Fonts" : "Fonts",
+                "Clipboard":"Clipboard",
+                "StatusItem":"StatusItem",
+                "Task" : "Task",
+                "Sound" : "Sound",
+                "Defaults" : "Defaults",
+                "File" : "File"
+                 },
+    "window" : {
+        "title" : "Aria2GUI",
+        "width" : 900,
+        "height" : 600,
+        "position": "center",
+        "min_width": 840,
+        "min_height": 660,
+        "opaque": 0,
+        "alpha": 0
+    }
+  
+}
