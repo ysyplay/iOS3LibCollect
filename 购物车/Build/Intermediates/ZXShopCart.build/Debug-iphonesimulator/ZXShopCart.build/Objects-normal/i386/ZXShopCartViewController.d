@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/Controller/ZXShopCartViewController.m \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/Controller/ZXShopCartViewController.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/Model/GoodsModel.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/Model/GoodsCategory.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/MJExtension.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/NSObject+MJCoding.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/NSObject+MJProperty.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/NSObject+MJClass.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/NSObject+MJKeyValue.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/MJExtensionConst.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/MJProperty.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/MJPropertyType.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/MJPropertyKey.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/Vender/MJExtension/NSString+MJExtension.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/View/MenuItemCell.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/View/ShopCartView.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/View/PopOutView.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/View/OrderDetailListView.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/View/BadgeView.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/tools/ThrowLineTool.h \
+  /Users/kengsir/Desktop/ZXShopCart-master/ZXShopCart/ZXShopCart/View/DetailListCell.h

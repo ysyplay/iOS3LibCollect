@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0262FCB1C741AD200E83B17 /* GoodsCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FC81C741AD200E83B17 /* GoodsCategory.m */; };
+		F0262FCC1C741AD200E83B17 /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FCA1C741AD200E83B17 /* GoodsModel.m */; };
+		F0262FD51C74893400E83B17 /* MenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FD31C74893400E83B17 /* MenuItemCell.m */; };
+		F0262FD61C74893400E83B17 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0262FD41C74893400E83B17 /* MenuItemCell.xib */; };
+		F0262FDA1C77269A00E83B17 /* ThrowLineTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FD91C77269A00E83B17 /* ThrowLineTool.m */; };
+		F0262FE61C7726CC00E83B17 /* BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FDC1C7726CC00E83B17 /* BadgeView.m */; };
+		F0262FE71C7726CC00E83B17 /* DetailListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FDE1C7726CC00E83B17 /* DetailListCell.m */; };
+		F0262FE81C7726CC00E83B17 /* DetailListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0262FDF1C7726CC00E83B17 /* DetailListCell.xib */; };
+		F0262FE91C7726CC00E83B17 /* OrderDetailListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FE11C7726CC00E83B17 /* OrderDetailListView.m */; };
+		F0262FEA1C7726CC00E83B17 /* PopOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FE31C7726CC00E83B17 /* PopOutView.m */; };
+		F0262FEB1C7726CC00E83B17 /* ShopCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = F0262FE51C7726CC00E83B17 /* ShopCartView.m */; };
+		F089D2441C60A37700DC6AD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2431C60A37700DC6AD7 /* main.m */; };
+		F089D2471C60A37700DC6AD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2461C60A37700DC6AD7 /* AppDelegate.m */; };
+		F089D24A1C60A37700DC6AD7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2491C60A37700DC6AD7 /* ViewController.m */; };
+		F089D24D1C60A37700DC6AD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F089D24B1C60A37700DC6AD7 /* Main.storyboard */; };
+		F089D24F1C60A37700DC6AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F089D24E1C60A37700DC6AD7 /* Assets.xcassets */; };
+		F089D2521C60A37700DC6AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F089D2501C60A37700DC6AD7 /* LaunchScreen.storyboard */; };
+		F089D25D1C60A37700DC6AD7 /* ZXShopCartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D25C1C60A37700DC6AD7 /* ZXShopCartTests.m */; };
+		F089D2681C60A37700DC6AD7 /* ZXShopCartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2671C60A37700DC6AD7 /* ZXShopCartUITests.m */; };
+		F089D27C1C60A7F600DC6AD7 /* ZXShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D27B1C60A7F600DC6AD7 /* ZXShopCartViewController.m */; };
+		F089D27E1C60AD5B00DC6AD7 /* goods.json in Resources */ = {isa = PBXBuildFile; fileRef = F089D27D1C60AD5B00DC6AD7 /* goods.json */; };
+		F089D2971C60AD6700DC6AD7 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2811C60AD6700DC6AD7 /* MJDictionaryCache.m */; };
+		F089D2981C60AD6700DC6AD7 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2841C60AD6700DC6AD7 /* MJExtensionConst.m */; };
+		F089D2991C60AD6700DC6AD7 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2861C60AD6700DC6AD7 /* MJFoundation.m */; };
+		F089D29A1C60AD6700DC6AD7 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2881C60AD6700DC6AD7 /* MJProperty.m */; };
+		F089D29B1C60AD6700DC6AD7 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D28A1C60AD6700DC6AD7 /* MJPropertyKey.m */; };
+		F089D29C1C60AD6700DC6AD7 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D28C1C60AD6700DC6AD7 /* MJPropertyType.m */; };
+		F089D29D1C60AD6700DC6AD7 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D28E1C60AD6700DC6AD7 /* NSObject+MJClass.m */; };
+		F089D29E1C60AD6700DC6AD7 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2901C60AD6700DC6AD7 /* NSObject+MJCoding.m */; };
+		F089D29F1C60AD6700DC6AD7 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2921C60AD6700DC6AD7 /* NSObject+MJKeyValue.m */; };
+		F089D2A01C60AD6700DC6AD7 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2941C60AD6700DC6AD7 /* NSObject+MJProperty.m */; };
+		F089D2A11C60AD6700DC6AD7 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F089D2961C60AD6700DC6AD7 /* NSString+MJExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F089D2591C60A37700DC6AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F089D2371C60A37700DC6AD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F089D23E1C60A37700DC6AD7;
+			remoteInfo = ZXShopCart;
+		};
+		F089D2641C60A37700DC6AD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F089D2371C60A37700DC6AD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F089D23E1C60A37700DC6AD7;
+			remoteInfo = ZXShopCart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F0262FC71C741AD200E83B17 /* GoodsCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsCategory.h; sourceTree = "<group>"; };
+		F0262FC81C741AD200E83B17 /* GoodsCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsCategory.m; sourceTree = "<group>"; };
+		F0262FC91C741AD200E83B17 /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
+		F0262FCA1C741AD200E83B17 /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
+		F0262FD21C74893400E83B17 /* MenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemCell.h; sourceTree = "<group>"; };
+		F0262FD31C74893400E83B17 /* MenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemCell.m; sourceTree = "<group>"; };
+		F0262FD41C74893400E83B17 /* MenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		F0262FD81C77269A00E83B17 /* ThrowLineTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThrowLineTool.h; sourceTree = "<group>"; };
+		F0262FD91C77269A00E83B17 /* ThrowLineTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThrowLineTool.m; sourceTree = "<group>"; };
+		F0262FDB1C7726CC00E83B17 /* BadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeView.h; sourceTree = "<group>"; };
+		F0262FDC1C7726CC00E83B17 /* BadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeView.m; sourceTree = "<group>"; };
+		F0262FDD1C7726CC00E83B17 /* DetailListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListCell.h; sourceTree = "<group>"; };
+		F0262FDE1C7726CC00E83B17 /* DetailListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailListCell.m; sourceTree = "<group>"; };
+		F0262FDF1C7726CC00E83B17 /* DetailListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailListCell.xib; sourceTree = "<group>"; };
+		F0262FE01C7726CC00E83B17 /* OrderDetailListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailListView.h; sourceTree = "<group>"; };
+		F0262FE11C7726CC00E83B17 /* OrderDetailListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailListView.m; sourceTree = "<group>"; };
+		F0262FE21C7726CC00E83B17 /* PopOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOutView.h; sourceTree = "<group>"; };
+		F0262FE31C7726CC00E83B17 /* PopOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOutView.m; sourceTree = "<group>"; };
+		F0262FE41C7726CC00E83B17 /* ShopCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCartView.h; sourceTree = "<group>"; };
+		F0262FE51C7726CC00E83B17 /* ShopCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCartView.m; sourceTree = "<group>"; };
+		F089D23F1C60A37700DC6AD7 /* ZXShopCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXShopCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F089D2431C60A37700DC6AD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F089D2451C60A37700DC6AD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F089D2461C60A37700DC6AD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F089D2481C60A37700DC6AD7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F089D2491C60A37700DC6AD7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F089D24C1C60A37700DC6AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F089D24E1C60A37700DC6AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F089D2511C60A37700DC6AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F089D2531C60A37700DC6AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F089D2581C60A37700DC6AD7 /* ZXShopCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXShopCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F089D25C1C60A37700DC6AD7 /* ZXShopCartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXShopCartTests.m; sourceTree = "<group>"; };
+		F089D25E1C60A37700DC6AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F089D2631C60A37700DC6AD7 /* ZXShopCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXShopCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F089D2671C60A37700DC6AD7 /* ZXShopCartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXShopCartUITests.m; sourceTree = "<group>"; };
+		F089D2691C60A37700DC6AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F089D27A1C60A7F600DC6AD7 /* ZXShopCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXShopCartViewController.h; sourceTree = "<group>"; };
+		F089D27B1C60A7F600DC6AD7 /* ZXShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXShopCartViewController.m; sourceTree = "<group>"; };
+		F089D27D1C60AD5B00DC6AD7 /* goods.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = goods.json; sourceTree = "<group>"; };
+		F089D2801C60AD6700DC6AD7 /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
+		F089D2811C60AD6700DC6AD7 /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
+		F089D2821C60AD6700DC6AD7 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		F089D2831C60AD6700DC6AD7 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		F089D2841C60AD6700DC6AD7 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		F089D2851C60AD6700DC6AD7 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		F089D2861C60AD6700DC6AD7 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		F089D2871C60AD6700DC6AD7 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		F089D2881C60AD6700DC6AD7 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		F089D2891C60AD6700DC6AD7 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		F089D28A1C60AD6700DC6AD7 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		F089D28B1C60AD6700DC6AD7 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		F089D28C1C60AD6700DC6AD7 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		F089D28D1C60AD6700DC6AD7 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		F089D28E1C60AD6700DC6AD7 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		F089D28F1C60AD6700DC6AD7 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		F089D2901C60AD6700DC6AD7 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		F089D2911C60AD6700DC6AD7 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		F089D2921C60AD6700DC6AD7 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		F089D2931C60AD6700DC6AD7 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		F089D2941C60AD6700DC6AD7 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		F089D2951C60AD6700DC6AD7 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		F089D2961C60AD6700DC6AD7 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F089D23C1C60A37700DC6AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F089D2551C60A37700DC6AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F089D2601C60A37700DC6AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0262FD71C77269A00E83B17 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				F0262FD81C77269A00E83B17 /* ThrowLineTool.h */,
+				F0262FD91C77269A00E83B17 /* ThrowLineTool.m */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		F089D2361C60A37700DC6AD7 = {
+			isa = PBXGroup;
+			children = (
+				F089D2411C60A37700DC6AD7 /* ZXShopCart */,
+				F089D25B1C60A37700DC6AD7 /* ZXShopCartTests */,
+				F089D2661C60A37700DC6AD7 /* ZXShopCartUITests */,
+				F089D2401C60A37700DC6AD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F089D2401C60A37700DC6AD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F089D23F1C60A37700DC6AD7 /* ZXShopCart.app */,
+				F089D2581C60A37700DC6AD7 /* ZXShopCartTests.xctest */,
+				F089D2631C60A37700DC6AD7 /* ZXShopCartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F089D2411C60A37700DC6AD7 /* ZXShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				F089D2751C60A50B00DC6AD7 /* ZXShopCart */,
+				F089D2451C60A37700DC6AD7 /* AppDelegate.h */,
+				F089D2461C60A37700DC6AD7 /* AppDelegate.m */,
+				F089D2481C60A37700DC6AD7 /* ViewController.h */,
+				F089D2491C60A37700DC6AD7 /* ViewController.m */,
+				F089D24B1C60A37700DC6AD7 /* Main.storyboard */,
+				F089D24E1C60A37700DC6AD7 /* Assets.xcassets */,
+				F089D2791C60A51B00DC6AD7 /* Vender */,
+				F089D2421C60A37700DC6AD7 /* Supporting Files */,
+			);
+			path = ZXShopCart;
+			sourceTree = "<group>";
+		};
+		F089D2421C60A37700DC6AD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F089D27D1C60AD5B00DC6AD7 /* goods.json */,
+				F089D2531C60A37700DC6AD7 /* Info.plist */,
+				F089D2431C60A37700DC6AD7 /* main.m */,
+				F089D2501C60A37700DC6AD7 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F089D25B1C60A37700DC6AD7 /* ZXShopCartTests */ = {
+			isa = PBXGroup;
+			children = (
+				F089D25C1C60A37700DC6AD7 /* ZXShopCartTests.m */,
+				F089D25E1C60A37700DC6AD7 /* Info.plist */,
+			);
+			path = ZXShopCartTests;
+			sourceTree = "<group>";
+		};
+		F089D2661C60A37700DC6AD7 /* ZXShopCartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F089D2671C60A37700DC6AD7 /* ZXShopCartUITests.m */,
+				F089D2691C60A37700DC6AD7 /* Info.plist */,
+			);
+			path = ZXShopCartUITests;
+			sourceTree = "<group>";
+		};
+		F089D2751C60A50B00DC6AD7 /* ZXShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				F0262FD71C77269A00E83B17 /* tools */,
+				F089D2761C60A50B00DC6AD7 /* Controller */,
+				F089D2771C60A50B00DC6AD7 /* Model */,
+				F089D2781C60A50B00DC6AD7 /* View */,
+			);
+			path = ZXShopCart;
+			sourceTree = "<group>";
+		};
+		F089D2761C60A50B00DC6AD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F089D27A1C60A7F600DC6AD7 /* ZXShopCartViewController.h */,
+				F089D27B1C60A7F600DC6AD7 /* ZXShopCartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F089D2771C60A50B00DC6AD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0262FC71C741AD200E83B17 /* GoodsCategory.h */,
+				F0262FC81C741AD200E83B17 /* GoodsCategory.m */,
+				F0262FC91C741AD200E83B17 /* GoodsModel.h */,
+				F0262FCA1C741AD200E83B17 /* GoodsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F089D2781C60A50B00DC6AD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0262FD21C74893400E83B17 /* MenuItemCell.h */,
+				F0262FD31C74893400E83B17 /* MenuItemCell.m */,
+				F0262FD41C74893400E83B17 /* MenuItemCell.xib */,
+				F0262FDB1C7726CC00E83B17 /* BadgeView.h */,
+				F0262FDC1C7726CC00E83B17 /* BadgeView.m */,
+				F0262FE21C7726CC00E83B17 /* PopOutView.h */,
+				F0262FE31C7726CC00E83B17 /* PopOutView.m */,
+				F0262FE41C7726CC00E83B17 /* ShopCartView.h */,
+				F0262FE51C7726CC00E83B17 /* ShopCartView.m */,
+				F0262FE01C7726CC00E83B17 /* OrderDetailListView.h */,
+				F0262FE11C7726CC00E83B17 /* OrderDetailListView.m */,
+				F0262FDD1C7726CC00E83B17 /* DetailListCell.h */,
+				F0262FDE1C7726CC00E83B17 /* DetailListCell.m */,
+				F0262FDF1C7726CC00E83B17 /* DetailListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F089D2791C60A51B00DC6AD7 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				F089D27F1C60AD6700DC6AD7 /* MJExtension */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		F089D27F1C60AD6700DC6AD7 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F089D2801C60AD6700DC6AD7 /* MJDictionaryCache.h */,
+				F089D2811C60AD6700DC6AD7 /* MJDictionaryCache.m */,
+				F089D2821C60AD6700DC6AD7 /* MJExtension.h */,
+				F089D2831C60AD6700DC6AD7 /* MJExtensionConst.h */,
+				F089D2841C60AD6700DC6AD7 /* MJExtensionConst.m */,
+				F089D2851C60AD6700DC6AD7 /* MJFoundation.h */,
+				F089D2861C60AD6700DC6AD7 /* MJFoundation.m */,
+				F089D2871C60AD6700DC6AD7 /* MJProperty.h */,
+				F089D2881C60AD6700DC6AD7 /* MJProperty.m */,
+				F089D2891C60AD6700DC6AD7 /* MJPropertyKey.h */,
+				F089D28A1C60AD6700DC6AD7 /* MJPropertyKey.m */,
+				F089D28B1C60AD6700DC6AD7 /* MJPropertyType.h */,
+				F089D28C1C60AD6700DC6AD7 /* MJPropertyType.m */,
+				F089D28D1C60AD6700DC6AD7 /* NSObject+MJClass.h */,
+				F089D28E1C60AD6700DC6AD7 /* NSObject+MJClass.m */,
+				F089D28F1C60AD6700DC6AD7 /* NSObject+MJCoding.h */,
+				F089D2901C60AD6700DC6AD7 /* NSObject+MJCoding.m */,
+				F089D2911C60AD6700DC6AD7 /* NSObject+MJKeyValue.h */,
+				F089D2921C60AD6700DC6AD7 /* NSObject+MJKeyValue.m */,
+				F089D2931C60AD6700DC6AD7 /* NSObject+MJProperty.h */,
+				F089D2941C60AD6700DC6AD7 /* NSObject+MJProperty.m */,
+				F089D2951C60AD6700DC6AD7 /* NSString+MJExtension.h */,
+				F089D2961C60AD6700DC6AD7 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F089D23E1C60A37700DC6AD7 /* ZXShopCart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F089D26C1C60A37700DC6AD7 /* Build configuration list for PBXNativeTarget "ZXShopCart" */;
+			buildPhases = (
+				F089D23B1C60A37700DC6AD7 /* Sources */,
+				F089D23C1C60A37700DC6AD7 /* Frameworks */,
+				F089D23D1C60A37700DC6AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXShopCart;
+			productName = ZXShopCart;
+			productReference = F089D23F1C60A37700DC6AD7 /* ZXShopCart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F089D2571C60A37700DC6AD7 /* ZXShopCartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F089D26F1C60A37700DC6AD7 /* Build configuration list for PBXNativeTarget "ZXShopCartTests" */;
+			buildPhases = (
+				F089D2541C60A37700DC6AD7 /* Sources */,
+				F089D2551C60A37700DC6AD7 /* Frameworks */,
+				F089D2561C60A37700DC6AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F089D25A1C60A37700DC6AD7 /* PBXTargetDependency */,
+			);
+			name = ZXShopCartTests;
+			productName = ZXShopCartTests;
+			productReference = F089D2581C60A37700DC6AD7 /* ZXShopCartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F089D2621C60A37700DC6AD7 /* ZXShopCartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F089D2721C60A37700DC6AD7 /* Build configuration list for PBXNativeTarget "ZXShopCartUITests" */;
+			buildPhases = (
+				F089D25F1C60A37700DC6AD7 /* Sources */,
+				F089D2601C60A37700DC6AD7 /* Frameworks */,
+				F089D2611C60A37700DC6AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F089D2651C60A37700DC6AD7 /* PBXTargetDependency */,
+			);
+			name = ZXShopCartUITests;
+			productName = ZXShopCartUITests;
+			productReference = F089D2631C60A37700DC6AD7 /* ZXShopCartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F089D2371C60A37700DC6AD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "周想";
+				TargetAttributes = {
+					F089D23E1C60A37700DC6AD7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F089D2571C60A37700DC6AD7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F089D23E1C60A37700DC6AD7;
+					};
+					F089D2621C60A37700DC6AD7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F089D23E1C60A37700DC6AD7;
+					};
+				};
+			};
+			buildConfigurationList = F089D23A1C60A37700DC6AD7 /* Build configuration list for PBXProject "ZXShopCart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F089D2361C60A37700DC6AD7;
+			productRefGroup = F089D2401C60A37700DC6AD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F089D23E1C60A37700DC6AD7 /* ZXShopCart */,
+				F089D2571C60A37700DC6AD7 /* ZXShopCartTests */,
+				F089D2621C60A37700DC6AD7 /* ZXShopCartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F089D23D1C60A37700DC6AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F089D2521C60A37700DC6AD7 /* LaunchScreen.storyboard in Resources */,
+				F0262FD61C74893400E83B17 /* MenuItemCell.xib in Resources */,
+				F0262FE81C7726CC00E83B17 /* DetailListCell.xib in Resources */,
+				F089D24F1C60A37700DC6AD7 /* Assets.xcassets in Resources */,
+				F089D27E1C60AD5B00DC6AD7 /* goods.json in Resources */,
+				F089D24D1C60A37700DC6AD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F089D2561C60A37700DC6AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F089D2611C60A37700DC6AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F089D23B1C60A37700DC6AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0262FE71C7726CC00E83B17 /* DetailListCell.m in Sources */,
+				F0262FDA1C77269A00E83B17 /* ThrowLineTool.m in Sources */,
+				F089D24A1C60A37700DC6AD7 /* ViewController.m in Sources */,
+				F089D2991C60AD6700DC6AD7 /* MJFoundation.m in Sources */,
+				F089D29F1C60AD6700DC6AD7 /* NSObject+MJKeyValue.m in Sources */,
+				F089D2471C60A37700DC6AD7 /* AppDelegate.m in Sources */,
+				F0262FCB1C741AD200E83B17 /* GoodsCategory.m in Sources */,
+				F089D29A1C60AD6700DC6AD7 /* MJProperty.m in Sources */,
+				F0262FEB1C7726CC00E83B17 /* ShopCartView.m in Sources */,
+				F0262FE91C7726CC00E83B17 /* OrderDetailListView.m in Sources */,
+				F0262FEA1C7726CC00E83B17 /* PopOutView.m in Sources */,
+				F089D29B1C60AD6700DC6AD7 /* MJPropertyKey.m in Sources */,
+				F0262FE61C7726CC00E83B17 /* BadgeView.m in Sources */,
+				F089D29C1C60AD6700DC6AD7 /* MJPropertyType.m in Sources */,
+				F089D29D1C60AD6700DC6AD7 /* NSObject+MJClass.m in Sources */,
+				F089D2A11C60AD6700DC6AD7 /* NSString+MJExtension.m in Sources */,
+				F089D27C1C60A7F600DC6AD7 /* ZXShopCartViewController.m in Sources */,
+				F0262FD51C74893400E83B17 /* MenuItemCell.m in Sources */,
+				F0262FCC1C741AD200E83B17 /* GoodsModel.m in Sources */,
+				F089D2A01C60AD6700DC6AD7 /* NSObject+MJProperty.m in Sources */,
+				F089D29E1C60AD6700DC6AD7 /* NSObject+MJCoding.m in Sources */,
+				F089D2971C60AD6700DC6AD7 /* MJDictionaryCache.m in Sources */,
+				F089D2981C60AD6700DC6AD7 /* MJExtensionConst.m in Sources */,
+				F089D2441C60A37700DC6AD7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F089D2541C60A37700DC6AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F089D25D1C60A37700DC6AD7 /* ZXShopCartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F089D25F1C60A37700DC6AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F089D2681C60A37700DC6AD7 /* ZXShopCartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F089D25A1C60A37700DC6AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F089D23E1C60A37700DC6AD7 /* ZXShopCart */;
+			targetProxy = F089D2591C60A37700DC6AD7 /* PBXContainerItemProxy */;
+		};
+		F089D2651C60A37700DC6AD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F089D23E1C60A37700DC6AD7 /* ZXShopCart */;
+			targetProxy = F089D2641C60A37700DC6AD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F089D24B1C60A37700DC6AD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F089D24C1C60A37700DC6AD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F089D2501C60A37700DC6AD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F089D2511C60A37700DC6AD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F089D26A1C60A37700DC6AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F089D26B1C60A37700DC6AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F089D26D1C60A37700DC6AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXShopCart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.shaynechow.ZXShopCart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F089D26E1C60A37700DC6AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZXShopCart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.shaynechow.ZXShopCart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F089D2701C60A37700DC6AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXShopCartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.shaynechow.ZXShopCartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXShopCart.app/ZXShopCart";
+			};
+			name = Debug;
+		};
+		F089D2711C60A37700DC6AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZXShopCartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.shaynechow.ZXShopCartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXShopCart.app/ZXShopCart";
+			};
+			name = Release;
+		};
+		F089D2731C60A37700DC6AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXShopCartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.shaynechow.ZXShopCartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXShopCart;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F089D2741C60A37700DC6AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZXShopCartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.shaynechow.ZXShopCartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZXShopCart;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F089D23A1C60A37700DC6AD7 /* Build configuration list for PBXProject "ZXShopCart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F089D26A1C60A37700DC6AD7 /* Debug */,
+				F089D26B1C60A37700DC6AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F089D26C1C60A37700DC6AD7 /* Build configuration list for PBXNativeTarget "ZXShopCart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F089D26D1C60A37700DC6AD7 /* Debug */,
+				F089D26E1C60A37700DC6AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F089D26F1C60A37700DC6AD7 /* Build configuration list for PBXNativeTarget "ZXShopCartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F089D2701C60A37700DC6AD7 /* Debug */,
+				F089D2711C60A37700DC6AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F089D2721C60A37700DC6AD7 /* Build configuration list for PBXNativeTarget "ZXShopCartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F089D2731C60A37700DC6AD7 /* Debug */,
+				F089D2741C60A37700DC6AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F089D2371C60A37700DC6AD7 /* Project object */;
+}
