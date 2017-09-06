@@ -52,11 +52,10 @@
 //    NSLog(@"十六进制:%@",value);
     [_peripheral writeValue:value forCharacteristic:_writeCharacteristic type:CBCharacteristicWriteWithResponse];
     NSLog(@"已经向外设%@写入数据%@",_peripheral.name,dataString);
-
 }
 
 - (instancetype)init
-{
+{ 
     self = [super init];
     if (self) {
         manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
