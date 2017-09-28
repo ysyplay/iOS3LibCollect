@@ -129,12 +129,14 @@ forRemoteNotification:(NSDictionary *)userInfo
   completionHandler:(void (^)())completionHandler {
 }
 #endif
+
 - (void)application:(UIApplication *)application
 c:(NSDictionary *)userInfo {
     [JPUSHService handleRemoteNotification:userInfo];
     [EBForeNotification handleRemoteNotification:userInfo soundID:1312];
     NSLog(@"iOS6及以下系统，收到通知:%@", [self logDic:userInfo]);
 }
+#pragma mark- ios7-ios9的相关推送处理
 //应用在运行状态，收到远程推送，直接调用该方法；而当程序处于后台或者被杀死状态，收到远程通知后，当你进入(Launch)程序时。 只适用于ios7-ios9
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo
@@ -154,7 +156,7 @@ fetchCompletionHandler:
     else
     {
         //此时程序在后台或被杀死，由用户点击系统弹窗走到这里
-        [self ClickPushWhenBackgroud:nil];
+        [self ClickPushWhenBackgroud:userInfo];
          NSLog(@"此时在后台");
     }
    
@@ -174,7 +176,7 @@ fetchCompletionHandler:
     NSLog(@"后台点击了弹窗");
 }
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
-#pragma mark- JPUSHRegisterDelegate
+#pragma mark-ios10的相关推送处理
 //ios10 推送的通知展示
 - (void)jpushNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(NSInteger))completionHandler {
     NSDictionary * userInfo = notification.request.content.userInfo;
@@ -278,7 +280,6 @@ fetchCompletionHandler:
     [tabs addObject:NVC2];
     tab.viewControllers = tabs;
     WINDOW.rootViewController = tab;
-
 }
 
 @end

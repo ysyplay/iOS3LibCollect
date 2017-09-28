@@ -53,7 +53,6 @@
 {
     [JPUSHService setAlias:@"0" callbackSelector:nil object:nil];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
