@@ -109,6 +109,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Feed" id="hlU-OK-IJs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Xuz-U4-h7W">
+                            <connections>
+                                <segue destination="azU-SP-fDL" kind="push" id="gbH-c9-TGH"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Actions" id="F7H-Qg-wdS" userLabel="Action">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.42190760374069214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -130,6 +135,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otr-cP-Co7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="464" y="221"/>
+        </scene>
+        <!--YsyVC-->
+        <scene sceneID="iJS-pi-dAP">
+            <objects>
+                <tableViewController id="azU-SP-fDL" customClass="Ysy_VC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ngs-DR-wZt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="azU-SP-fDL" id="Z4X-G0-LOv"/>
+                            <outlet property="delegate" destination="azU-SP-fDL" id="BOC-zl-gXO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gdC-4b-XmI">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="ZpD-bG-8Tf">
+                            <connections>
+                                <action selector="pop:" destination="azU-SP-fDL" id="Ctw-F4-gwx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddf-LG-XNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="221"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3XP-rg-r8F">

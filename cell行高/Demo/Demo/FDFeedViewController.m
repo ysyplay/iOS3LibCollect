@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger, FDSimulatedCacheMode) {
     [super viewDidLoad];
    
     self.tableView.fd_debugLogEnabled = YES;
-    
+
     // Cache by index path initial
     self.cacheModeSegmentControl.selectedSegmentIndex = 1;
     
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, FDSimulatedCacheMode) {
         [self.tableView reloadData];
     }];
 }
-
+ 
 - (void)buildTestDataThen:(void (^)(void))then {
     // Simulate an async request
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

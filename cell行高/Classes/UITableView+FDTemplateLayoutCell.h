@@ -24,7 +24,7 @@
 #import "UITableView+FDKeyedHeightCache.h"
 #import "UITableView+FDIndexPathHeightCache.h"
 #import "UITableView+FDTemplateLayoutCellDebug.h"
-
+#import "UITableViewCell+YsyTemplateLayoutCell.h"
 @interface UITableView (FDTemplateLayoutCell)
 
 /// Access to internal template layout cell for given reuse identifier.
@@ -69,6 +69,9 @@
 /// @param key model entity's identifier whose data configures a cell.
 ///
 - (CGFloat)fd_heightForCellWithIdentifier:(NSString *)identifier cacheByKey:(id<NSCopying>)key configuration:(void (^)(id cell))configuration;
+
+
+- (CGFloat)ysy_heightForCellWithIdentifier:(NSString *)identifier cacheByIndexPath:(NSIndexPath *)indexPath configuration:(void (^)(id cell))configuration;
 
 @end
 

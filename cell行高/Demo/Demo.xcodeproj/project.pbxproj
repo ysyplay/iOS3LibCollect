@@ -20,6 +20,12 @@
 		48954A271B5102E200EFD15D /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 48954A211B5102E200EFD15D /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		4897E5DD1ADFFBBD00E87B5F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4897E5DC1ADFFBBD00E87B5F /* data.json */; };
 		4897E5E01AE090B900E87B5F /* FDFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4897E5DF1AE090B900E87B5F /* FDFeedCell.m */; };
+		A775F5291F7E205B007C6505 /* Ysy_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = A775F5281F7E205B007C6505 /* Ysy_VC.m */; };
+		A775F52D1F7E20C7007C6505 /* Ysy_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A775F52B1F7E20C7007C6505 /* Ysy_Cell.m */; };
+		A775F52E1F7E20C7007C6505 /* Ysy_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A775F52C1F7E20C7007C6505 /* Ysy_Cell.xib */; };
+		A775F5311F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A775F5301F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.m */; };
+		A775F53E1F7E40A7007C6505 /* KeFuAddImg_Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = A775F53C1F7E40A7007C6505 /* KeFuAddImg_Cell.m */; };
+		A775F53F1F7E40A7007C6505 /* KeFuAddImg_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A775F53D1F7E40A7007C6505 /* KeFuAddImg_Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,16 @@
 		4897E5DC1ADFFBBD00E87B5F /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		4897E5DE1AE090B900E87B5F /* FDFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFeedCell.h; sourceTree = "<group>"; };
 		4897E5DF1AE090B900E87B5F /* FDFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDFeedCell.m; sourceTree = "<group>"; };
+		A775F5271F7E205B007C6505 /* Ysy_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ysy_VC.h; sourceTree = "<group>"; };
+		A775F5281F7E205B007C6505 /* Ysy_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ysy_VC.m; sourceTree = "<group>"; };
+		A775F52A1F7E20C7007C6505 /* Ysy_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ysy_Cell.h; sourceTree = "<group>"; };
+		A775F52B1F7E20C7007C6505 /* Ysy_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ysy_Cell.m; sourceTree = "<group>"; };
+		A775F52C1F7E20C7007C6505 /* Ysy_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Ysy_Cell.xib; sourceTree = "<group>"; };
+		A775F52F1F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+YsyTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		A775F5301F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+YsyTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		A775F53B1F7E40A7007C6505 /* KeFuAddImg_Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeFuAddImg_Cell.h; sourceTree = "<group>"; };
+		A775F53C1F7E40A7007C6505 /* KeFuAddImg_Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeFuAddImg_Cell.m; sourceTree = "<group>"; };
+		A775F53D1F7E40A7007C6505 /* KeFuAddImg_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeFuAddImg_Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +123,7 @@
 				488EECDF1ADFF7A5004EAA71 /* FDFeedViewController.m */,
 				4897E5DE1AE090B900E87B5F /* FDFeedCell.h */,
 				4897E5DF1AE090B900E87B5F /* FDFeedCell.m */,
+				A775F5231F7E1FC9007C6505 /* ysy+ */,
 				488EECBE1ADFEDC6004EAA71 /* Main.storyboard */,
 				4897E5DC1ADFFBBD00E87B5F /* data.json */,
 			);
@@ -124,9 +141,26 @@
 				485DB89D1BB0004300CEAE33 /* UITableView+FDIndexPathHeightCache.m */,
 				48954A201B5102E200EFD15D /* UITableView+FDTemplateLayoutCellDebug.h */,
 				48954A211B5102E200EFD15D /* UITableView+FDTemplateLayoutCellDebug.m */,
+				A775F52F1F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.h */,
+				A775F5301F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.m */,
 			);
 			name = Classes;
 			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		A775F5231F7E1FC9007C6505 /* ysy+ */ = {
+			isa = PBXGroup;
+			children = (
+				A775F5271F7E205B007C6505 /* Ysy_VC.h */,
+				A775F5281F7E205B007C6505 /* Ysy_VC.m */,
+				A775F52A1F7E20C7007C6505 /* Ysy_Cell.h */,
+				A775F52B1F7E20C7007C6505 /* Ysy_Cell.m */,
+				A775F52C1F7E20C7007C6505 /* Ysy_Cell.xib */,
+				A775F53B1F7E40A7007C6505 /* KeFuAddImg_Cell.h */,
+				A775F53C1F7E40A7007C6505 /* KeFuAddImg_Cell.m */,
+				A775F53D1F7E40A7007C6505 /* KeFuAddImg_Cell.xib */,
+			);
+			name = "ysy+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				488EECC01ADFEDC6004EAA71 /* Main.storyboard in Resources */,
+				A775F52E1F7E20C7007C6505 /* Ysy_Cell.xib in Resources */,
 				488EECC51ADFEDC6004EAA71 /* LaunchScreen.xib in Resources */,
 				488EECC21ADFEDC6004EAA71 /* Images.xcassets in Resources */,
+				A775F53F1F7E40A7007C6505 /* KeFuAddImg_Cell.xib in Resources */,
 				4897E5DD1ADFFBBD00E87B5F /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,13 +238,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				488EECBA1ADFEDC6004EAA71 /* FDAppDelegate.m in Sources */,
+				A775F5311F7E2D0B007C6505 /* UITableViewCell+YsyTemplateLayoutCell.m in Sources */,
 				48954A261B5102E200EFD15D /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				48954A271B5102E200EFD15D /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				A775F52D1F7E20C7007C6505 /* Ysy_Cell.m in Sources */,
 				488EECE01ADFF7A5004EAA71 /* FDFeedViewController.m in Sources */,
 				4897E5E01AE090B900E87B5F /* FDFeedCell.m in Sources */,
+				A775F53E1F7E40A7007C6505 /* KeFuAddImg_Cell.m in Sources */,
 				488EECB71ADFEDC6004EAA71 /* main.m in Sources */,
 				485DB89B1BAFFF8900CEAE33 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				485DB89E1BB0004300CEAE33 /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				A775F5291F7E205B007C6505 /* Ysy_VC.m in Sources */,
 				488EECE31ADFF884004EAA71 /* FDFeedEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

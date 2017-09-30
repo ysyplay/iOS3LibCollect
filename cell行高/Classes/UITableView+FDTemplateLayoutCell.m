@@ -116,7 +116,7 @@
         
         [self fd_debugLog:[NSString stringWithFormat:@"calculate using sizeThatFits - %@", @(fittingHeight)]];
     }
-    
+
     // Still zero height after all above.
     if (fittingHeight == 0) {
         // Use default row height.
@@ -141,7 +141,6 @@
     }
     
     UITableViewCell *templateCell = templateCellsByIdentifiers[identifier];
-    
     if (!templateCell) {
         templateCell = [self dequeueReusableCellWithIdentifier:identifier];
         NSAssert(templateCell != nil, @"Cell must be registered to table view for identifier - %@", identifier);
@@ -170,12 +169,65 @@
     
     return [self fd_systemFittingHeightForConfiguratedCell:templateLayoutCell];
 }
-
+//这里是ysy添加的---------------------------------------------------------------------------
+- (CGFloat)ysy_heightForCellWithIdentifier:(NSString *)identifier cacheByIndexPath:(NSIndexPath *)indexPath configuration:(void (^)(id cell))configuration {
+    if (!identifier || !indexPath) {
+        return 0;
+    }
+    // Hit cache
+    if ([self.fd_indexPathHeightCache existsHeightAtIndexPath:indexPath]) {
+        [self fd_debugLog:[NSString stringWithFormat:@"hit cache by index path[%@:%@] - %@", @(indexPath.section), @(indexPath.row), @([self.fd_indexPathHeightCache heightForIndexPath:indexPath])]];
+        return [self.fd_indexPathHeightCache heightForIndexPath:indexPath];
+    }
+    CGFloat height = [self ysy_heightForCellWithIdentifier:identifier configuration:configuration];
+    [self.fd_indexPathHeightCache cacheHeight:height byIndexPath:indexPath];
+    [self fd_debugLog:[NSString stringWithFormat: @"cached by index path[%@:%@] - %@", @(indexPath.section), @(indexPath.row), @(height)]];
+    return height;
+}
+- (CGFloat)ysy_heightForCellWithIdentifier:(NSString *)identifier configuration:(void (^)(id cell))configuration {
+    if (!identifier) {
+        return 0;
+    }
+    UITableViewCell *templateLayoutCell = [self fd_templateCellForReuseIdentifier:identifier];
+    // Manually calls to ensure consistent behavior with actual cells. (that are displayed on screen)
+    [templateLayoutCell prepareForReuse];
+    // Customize and provide content for our template cell.
+    if (configuration) {
+        configuration(templateLayoutCell);
+    }
+    if ([templateLayoutCell respondsToSelector:@selector(calculateHeight:)])
+    {
+        CGFloat contentViewWidth = CGRectGetWidth(self.frame);
+        
+        CGRect cellBounds = templateLayoutCell.bounds;
+        cellBounds.size.width = contentViewWidth;
+        templateLayoutCell.bounds = cellBounds;
+        
+        CGFloat accessroyWidth = 0;
+        // If a cell has accessory view or system accessory type, its content view's width is smaller
+        // than cell's by some fixed values.
+        if (templateLayoutCell.accessoryView) {
+            accessroyWidth = 16 + CGRectGetWidth(templateLayoutCell.accessoryView.frame);
+        } else {
+            static const CGFloat systemAccessoryWidths[] = {
+                [UITableViewCellAccessoryNone] = 0,
+                [UITableViewCellAccessoryDisclosureIndicator] = 34,
+                [UITableViewCellAccessoryDetailDisclosureButton] = 68,
+                [UITableViewCellAccessoryCheckmark] = 40,
+                [UITableViewCellAccessoryDetailButton] = 48
+            };
+            accessroyWidth = systemAccessoryWidths[templateLayoutCell.accessoryType];
+        }
+        contentViewWidth -= accessroyWidth;
+        return [templateLayoutCell calculateHeight:CGSizeMake(contentViewWidth, 0)];
+    }
+    return 0;
+}
+//这里是ysy添加的end---------------------------------------------------------------------------
 - (CGFloat)fd_heightForCellWithIdentifier:(NSString *)identifier cacheByIndexPath:(NSIndexPath *)indexPath configuration:(void (^)(id cell))configuration {
     if (!identifier || !indexPath) {
         return 0;
     }
-    
     // Hit cache
     if ([self.fd_indexPathHeightCache existsHeightAtIndexPath:indexPath]) {
         [self fd_debugLog:[NSString stringWithFormat:@"hit cache by index path[%@:%@] - %@", @(indexPath.section), @(indexPath.row), @([self.fd_indexPathHeightCache heightForIndexPath:indexPath])]];
@@ -187,7 +239,6 @@
     
     return height;
 }
-
 - (CGFloat)fd_heightForCellWithIdentifier:(NSString *)identifier cacheByKey:(id<NSCopying>)key configuration:(void (^)(id cell))configuration {
     if (!identifier || !key) {
         return 0;
