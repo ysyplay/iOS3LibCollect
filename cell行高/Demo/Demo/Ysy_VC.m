@@ -111,7 +111,6 @@
 //    return [tableView fd_heightForCellWithIdentifier:@"re" cacheByIndexPath:indexPath configuration:^(id cell) {
 //        [self configureCell:cell atIndexPath:indexPath];
 //    }];
-    
     return [tableView ysy_heightForCellWithIdentifier:@"KeFuAddImg_Cell" cacheByIndexPath:indexPath configuration:^(id cell) {
        [self configureCell:cell atIndexPath:indexPath];
     }];

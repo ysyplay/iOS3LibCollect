@@ -62,10 +62,8 @@
 }
 #pragma -mark KVO 监听
 - (void)demoKvo {
-
     [RACObserve(self.person, password)
      subscribeNext:^(id x) {
-
          NSLog(@"******* password改变了%@",x);
      }];
 }
@@ -77,7 +75,7 @@
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:UIKeyboardWillChangeFrameNotification object:nil]
      subscribeNext:^(id x) {
 //         NSLog(@"notificationDemo : %@", x);
-     }
+      }
      ];
 }
 #pragma -mark 代理方法
@@ -85,7 +83,6 @@
  * 验证此函：nameText的输入字符时，输入回撤或者点击键盘的回车键使passWordText变为第一响应者（即输入光标移动到passWordText处）
  */
 - (void)delegateDemo {
-    
     @weakify(self)
     // 1. 定义代理
     self.proxy = [[RACDelegateProxy alloc] initWithProtocol:@protocol(UITextFieldDelegate)];
@@ -110,27 +107,21 @@
      }
      ];
 }
-
 #pragma -mark 文本信号组合
 
 /**
  * TF和passWordText都有文字时，才允许点击按钮
  */
-- (void)textFileCombination {
-    
+- (void)textFileCombination{
     id signals = @[[self.TF rac_textSignal],[self.passWordText rac_textSignal]];
-    
     @weakify(self);
     [[RACSignal
       combineLatest:signals]
      subscribeNext:^(RACTuple *x) {
-         
          @strongify(self);
          NSString *name = x[0];
          NSString *password = x[1];
-         
          if (name.length > 0 && password.length > 0) {
-             
              self.loginButton.enabled = YES;
              self.person.name = name;
              self.person.password = password;
@@ -138,7 +129,7 @@
              
          } else  {
              self.loginButton.enabled = NO;
-             
+
          }
      }];
 }
