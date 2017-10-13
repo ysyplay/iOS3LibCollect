@@ -31,9 +31,9 @@
                  ,@"评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论11"
                  ,@"评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论评论12", nil];
 
-//    self.tableView.rowHeight = UITableViewAutomaticDimension;
-//    self.tableView.estimatedRowHeight = 100;
-//    [self.tableView registerNib:[UINib nibWithNibName:@"Ysy_Cell" bundle:nil] forCellReuseIdentifier:@"re"];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 100;
+    [self.tableView registerNib:[UINib nibWithNibName:@"Ysy_Cell" bundle:nil] forCellReuseIdentifier:@"re"];
     [self.tableView registerNib:[UINib nibWithNibName:@"KeFuAddImg_Cell" bundle:nil] forCellReuseIdentifier:@"KeFuAddImg_Cell"];
     [self.tableView reloadData];
 
@@ -51,7 +51,7 @@
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -63,42 +63,40 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    if (indexPath.section==0)
-//    {
+    if (indexPath.section==0)
+    {
         KeFuAddImg_Cell *cell = [tableView dequeueReusableCellWithIdentifier:@"KeFuAddImg_Cell"];
         [self configureCell:cell atIndexPath:indexPath];
         return cell;
-//    }
-//    Ysy_Cell *cell = [tableView dequeueReusableCellWithIdentifier:@"re"];
-//    [self configureCell:cell atIndexPath:indexPath];
-//    return cell;
+    }
+    Ysy_Cell *cell = [tableView dequeueReusableCellWithIdentifier:@"re"];
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
 }
 - (void)configureCell:(id)cell atIndexPath:(NSIndexPath *)indexPath
 {
-//    if (indexPath.section == 0)
-//    {
+    if (indexPath.section == 0)
+    {
     
         KeFuAddImg_Cell *cell1 = cell;
         cell1.RefreshBlock = ^{
-            NSLog(@"1111111");
             [self.tableView reloadData];
         };
-//    }
-//    else
-//    {
-//        NSLog(@"222222222");
-//        Ysy_Cell *cell2 = cell;
-//        cell2.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
-//        if (indexPath.row % 2 == 0) {
-//            cell2.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//        }
-//        else
-//        {
-//            cell2.accessoryType = UITableViewCellAccessoryNone;
-//        }
-//        cell2.selectionStyle =  UITableViewCellSelectionStyleNone;
-//        cell2.contentLab.text = _dataArr[indexPath.row];
-//    }
+    }
+    else
+    {
+        Ysy_Cell *cell2 = cell;
+        cell2.fd_enforceFrameLayout = NO; // Enable to use "-sizeThatFits:"
+        if (indexPath.row % 2 == 0) {
+            cell2.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
+        else
+        {
+            cell2.accessoryType = UITableViewCellAccessoryNone;
+        }
+        cell2.selectionStyle =  UITableViewCellSelectionStyleNone;
+        cell2.contentLab.text = _dataArr[indexPath.row];
+    }
 
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -107,12 +105,15 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-//    return [tableView fd_heightForCellWithIdentifier:@"re" cacheByIndexPath:indexPath configuration:^(id cell) {
-//        [self configureCell:cell atIndexPath:indexPath];
-//    }];
-    return [tableView ysy_heightForCellWithIdentifier:@"KeFuAddImg_Cell" cacheByIndexPath:indexPath configuration:^(id cell) {
-       [self configureCell:cell atIndexPath:indexPath];
+    if (indexPath.section == 0)
+    {
+        return [tableView ysy_heightForCellWithIdentifier:@"KeFuAddImg_Cell" cacheByIndexPath:indexPath configuration:^(id cell) {
+            [self configureCell:cell atIndexPath:indexPath];
+        }];
+    }
+    return [tableView fd_heightForCellWithIdentifier:@"re" cacheByIndexPath:indexPath configuration:^(id cell) {
+        [self configureCell:cell atIndexPath:indexPath];
     }];
+
 }
 @end

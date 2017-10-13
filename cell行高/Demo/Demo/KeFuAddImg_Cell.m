@@ -36,7 +36,6 @@
 }
 -(CGFloat)calculateHeight:(CGSize)size
 {
-   
     CGFloat totalHeight = 0;
     totalHeight += _upImageView.frame.size.height;
     NSLog(@"_upImageView %f",self.upImageView.frame.size.height);
@@ -48,7 +47,6 @@
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
 }
 
