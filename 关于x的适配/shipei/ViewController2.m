@@ -8,13 +8,16 @@
 
 #import "ViewController2.h"
 #import "YsyDeviceInfoToos.h"
+#define kDevice_Is_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define NAVIGATIONBAR (kDevice_Is_iPhoneX ? 88 :64)
+#define STATUSBARH (kDevice_Is_iPhoneX ? 44 :20)
+#define TABBAR (kDevice_Is_iPhoneX ? 83 :49)
 @interface ViewController2 ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIView *NAVView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *navHeight;
 @property (weak, nonatomic) IBOutlet UIButton *leftButt;
 @property (weak, nonatomic) IBOutlet UIButton *rightButt;
 @property (weak, nonatomic) IBOutlet UITableView *table;
-
 @end
 
 @implementation ViewController2
@@ -55,7 +58,6 @@
     _table.dataSource =self;
     _table.showsVerticalScrollIndicator = NO;
     _table.separatorStyle = UITableViewCellSeparatorStyleNone;
-
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -70,7 +72,6 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"这是第%ld行",(long)indexPath.row];
     return cell;
-
 }
 - (IBAction)butt:(id)sender
 {

@@ -151,5 +151,8 @@
         return @"iPad Pro 10.5 inch (WiFi)";
     if ([deviceString isEqualToString:@"iPad7,4"])
         return @"iPad Pro 10.5 inch (Cellular)";
-    if ([deviceString isEqualToString:@"AppleTV2,1"])    return @"Apple TV 2";   if ([deviceString isEqualToString:@"AppleTV3,1"])    return @"Apple TV 3";   if ([deviceString isEqualToString:@"AppleTV3,2"])    return @"Apple TV 3";   if ([deviceString isEqualToString:@"AppleTV5,3"])    return @"Apple TV 4";    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";        return deviceString;}
+    if ([deviceString isEqualToString:@"AppleTV2,1"])    return @"Apple TV 2";   if ([deviceString isEqualToString:@"AppleTV3,1"])    return @"Apple TV 3";   if ([deviceString isEqualToString:@"AppleTV3,2"])    return @"Apple TV 3";   if ([deviceString isEqualToString:@"AppleTV5,3"])    return @"Apple TV 4";    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+    return deviceString;
+    
+}
 @end

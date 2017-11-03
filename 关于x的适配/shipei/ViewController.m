@@ -35,7 +35,6 @@
             });
         });
     }
-
 }
 -(void)viewWillAppear:(BOOL)animated
 {
